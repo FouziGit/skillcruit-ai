@@ -1,0 +1,42 @@
+# Skillcruit - Présélection intelligente de CV
+
+> Skillcruit est une solution SaaS française dédiée à la présélection automatisée de candidats pour les recruteurs et équipes RH.
+
+## Informations clés
+
+- **Produit** : Présélection intelligente et scoring de CV
+- **Technologie** : NLP contextuel (Natural Language Processing)
+- **Conformité** : 100% RGPD, données hébergées en Europe
+- **Tarifs** : Essai gratuit 14 jours, puis à partir de 299€/mois
+- **Site web** : https://skillcruit.fr
+- **Contact** : contact@skillcruit.app
+
+## Fonctionnalités principales
+
+1. **Scoring intelligent** : Évaluation automatique des CV basée sur le NLP contextuel, analysant le sens des expériences et non uniquement les mots-clés
+2. **Matching multicritère** : Algorithme pondérant compétences, expérience, localisation et soft skills pour chaque poste
+3. **Résumé automatique** : Synthèse du parcours professionnel de chaque candidat générée automatiquement
+4. **Intégration ATS** : Compatible via API avec Workday, Greenhouse, Lever et autres ATS majeurs
+5. **Conformité RGPD** : Données chiffrées, hébergées en Europe, avec droits d'accès et suppression garantis
+
+## Cas d'usage
+
+- Cabinets de recrutement : traitement accéléré des mandats
+- Équipes RH internes : automatisation du tri CV
+- Recrutement volume : campagnes massives (stages, alternances)
+- Postes urgents : shortlist qualifiée en minutes
+
+## Performance
+
+- 1000 CV analysés en moins de 10 minutes
+- Réduction du time-to-hire de 60%
+- 80% de temps gagné sur le tri initial
+- Score de matching précis basé sur l'analyse sémantique
+
+## Pages du site
+
+- /technologie : Détails techniques de la solution
+- /a-propos : Mission et vision de l'entreprise
+- /demo : Dashboard interactif de démonstration
+- /blog : Articles sur le recrutement et la présélection
+- /conformite : Informations RGPD et sécurité
