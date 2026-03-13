@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Shield, Clock, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { BackgroundPaths } from "./ui/background-paths";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -10,8 +11,7 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-b from-slate-50 to-white" aria-labelledby="hero-title">
-      {/* Subtle dot pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_hsl(220_90%_50%_/_0.04)_1px,_transparent_0)] bg-[size:32px_32px]" aria-hidden="true" />
+      <BackgroundPaths />
 
       <div className="container relative z-10 px-6 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8">
