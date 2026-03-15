@@ -71,11 +71,11 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Skillcruit",
-  "url": "https://skillcruit.fr",
+  "url": "https://skillcruit.app",
   "description": "Présélection intelligente de candidats pour recruteurs. Analyse CV, scoring automatique, matching.",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://skillcruit.fr/blog?q={search_term_string}",
+    "target": "https://skillcruit.app/blog?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -97,7 +97,7 @@ export const softwareApplicationSchema = {
   "provider": {
     "@type": "Organization",
     "name": "Skillcruit",
-    "url": "https://skillcruit.fr",
+    "url": "https://skillcruit.app",
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -136,8 +136,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Skillcruit",
-  "url": "https://skillcruit.fr",
-  "logo": "https://skillcruit.fr/favicon.ico",
+  "url": "https://skillcruit.app",
+  "logo": "https://skillcruit.app/favicon.ico",
   "description": "Skillcruit développe une solution de présélection intelligente pour recruteurs, combinant NLP contextuel et conformité RGPD.",
   "sameAs": ["https://linkedin.com/company/skillcruit"],
   "contactPoint": {

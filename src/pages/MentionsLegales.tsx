@@ -8,7 +8,7 @@ export default function MentionsLegales() {
       <SEOHead
         title="Mentions Légales - Skillcruit"
         description="Mentions légales de Skillcruit : informations sur l'éditeur, hébergement, propriété intellectuelle et données personnelles."
-        canonical="https://skillcruit.fr/mentions-legales"
+        canonical="https://skillcruit.app/mentions-legales"
       />
       
       <Navbar />

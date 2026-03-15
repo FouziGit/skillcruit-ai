@@ -8,8 +8,8 @@
 - **Technologie** : NLP contextuel (Natural Language Processing)
 - **Conformité** : 100% RGPD, données hébergées en Europe
 - **Tarifs** : Essai gratuit 14 jours, puis à partir de 299€/mois
-- **Site web** : https://skillcruit.fr
-- **Contact** : contact@skillcruit.fr
+- **Site web** : https://skillcruit.app
+- **Contact** : contact@skillcruit.app
 
 ## Fonctionnalités principales
 

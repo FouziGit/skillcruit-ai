@@ -25,18 +25,18 @@ export default function Technology() {
       <SEOHead
         title="Technologie NLP - Skillcruit | Analyse sémantique de CV"
         description="Découvrez notre moteur de présélection : scoring NLP, matching intelligent, résumés automatiques. Technologie made in France, 100% RGPD."
-        canonical="https://skillcruit.fr/technologie"
+        canonical="https://skillcruit.app/technologie"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Technologie NLP Skillcruit",
           "description": "Moteur de présélection : scoring NLP, matching intelligent, résumés automatiques.",
-          "url": "https://skillcruit.fr/technologie",
+          "url": "https://skillcruit.app/technologie",
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
-              { "@type": "ListItem", "position": 2, "name": "Technologie", "item": "https://skillcruit.fr/technologie" },
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.app" },
+              { "@type": "ListItem", "position": 2, "name": "Technologie", "item": "https://skillcruit.app/technologie" },
             ],
           },
         }}

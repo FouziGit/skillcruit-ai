@@ -8,7 +8,7 @@ export default function Terms() {
       <SEOHead
         title="Conditions Générales d'Utilisation - Skillcruit"
         description="CGU de Skillcruit : conditions d'utilisation du service SaaS de présélection IA, tarification, responsabilités."
-        canonical="https://skillcruit.fr/cgu"
+        canonical="https://skillcruit.app/cgu"
       />
       
       <Navbar />

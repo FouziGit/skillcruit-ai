@@ -164,7 +164,7 @@ const BlogPost = () => {
       <SEOHead
         title={`${post.title} | Blog Skillcruit`}
         description={post.excerpt}
-        canonical={`https://skillcruit.fr/blog/${post.slug}`}
+        canonical={`https://skillcruit.app/blog/${post.slug}`}
         jsonLd={{
           "@context": "https://schema.org",
           "@graph": [
@@ -179,16 +179,16 @@ const BlogPost = () => {
               "author": {
                 "@type": "Organization",
                 "name": post.author,
-                "url": "https://skillcruit.fr",
+                "url": "https://skillcruit.app",
               },
               "publisher": {
                 "@type": "Organization",
                 "name": "Skillcruit",
-                "url": "https://skillcruit.fr",
+                "url": "https://skillcruit.app",
               },
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": `https://skillcruit.fr/blog/${post.slug}`,
+                "@id": `https://skillcruit.app/blog/${post.slug}`,
               },
               "keywords": post.tags.join(", "),
               "speakable": {
@@ -199,9 +199,9 @@ const BlogPost = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
-                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://skillcruit.fr/blog" },
-                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://skillcruit.fr/blog/${post.slug}` },
+                { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.app" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://skillcruit.app/blog" },
+                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://skillcruit.app/blog/${post.slug}` },
               ],
             },
             ...(post.faq && post.faq.length > 0 ? [{

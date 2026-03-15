@@ -49,18 +49,18 @@ const Demo = () => {
       <SEOHead
         title="Démo interactive Skillcruit - Découvrez la présélection en action"
         description="Explorez notre dashboard interactif et découvrez comment Skillcruit analyse et classe les CV en quelques secondes."
-        canonical="https://skillcruit.fr/demo"
+        canonical="https://skillcruit.app/demo"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Démo interactive Skillcruit",
           "description": "Dashboard interactif de présélection de CV avec scoring NLP en temps réel.",
-          "url": "https://skillcruit.fr/demo",
+          "url": "https://skillcruit.app/demo",
           "breadcrumb": {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
-              { "@type": "ListItem", "position": 2, "name": "Démo", "item": "https://skillcruit.fr/demo" },
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.app" },
+              { "@type": "ListItem", "position": 2, "name": "Démo", "item": "https://skillcruit.app/demo" },
             ],
           },
         }}

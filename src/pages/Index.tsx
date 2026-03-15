@@ -41,7 +41,7 @@ const Index = () => {
       <SEOHead
         title="Skillcruit - Présélection intelligente de CV | Recrutez mieux, plus vite"
         description="Analysez, scorez et classez vos candidatures en 30 secondes. Présélection intelligente pour recruteurs. Essai gratuit 14 jours, 100% RGPD."
-        canonical="https://skillcruit.fr"
+        canonical="https://skillcruit.app"
         jsonLd={combinedJsonLd}
       />
 

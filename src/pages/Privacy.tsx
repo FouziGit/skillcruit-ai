@@ -8,7 +8,7 @@ export default function Privacy() {
       <SEOHead
         title="Politique de Confidentialité - Skillcruit"
         description="Découvrez comment Skillcruit protège vos données personnelles. Conformité RGPD, droits d'accès, hébergement européen."
-        canonical="https://skillcruit.fr/politique-confidentialite"
+        canonical="https://skillcruit.app/politique-confidentialite"
       />
       
       <Navbar />
@@ -51,7 +51,7 @@ export default function Privacy() {
                 <li>Droit à l'effacement</li>
                 <li>Droit à la portabilité</li>
               </ul>
-              <p className="mt-3">Contact : privacy@skillcruit.fr</p>
+              <p className="mt-3">Contact : privacy@skillcruit.app</p>
             </section>
 
             <section>

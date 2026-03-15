@@ -34,17 +34,17 @@ const Blog = () => {
       <SEOHead
         title="Blog Skillcruit - Recrutement, scoring et bonnes pratiques RH"
         description="Découvrez nos articles sur le recrutement moderne, le scoring de CV, la conformité RGPD et les bonnes pratiques RH."
-        canonical="https://skillcruit.fr/blog"
+        canonical="https://skillcruit.app/blog"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Blog",
           "name": "Blog Skillcruit",
           "description": "Articles sur le recrutement moderne et la présélection intelligente",
-          "url": "https://skillcruit.fr/blog",
+          "url": "https://skillcruit.app/blog",
           "publisher": {
             "@type": "Organization",
             "name": "Skillcruit",
-            "url": "https://skillcruit.fr",
+            "url": "https://skillcruit.app",
           },
         }}
       />

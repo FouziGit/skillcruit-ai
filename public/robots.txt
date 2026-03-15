@@ -26,4 +26,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://skillcruit.fr/sitemap.xml
+Sitemap: https://skillcruit.app/sitemap.xml
