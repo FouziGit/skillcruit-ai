@@ -33,13 +33,18 @@ export const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) throw new Error("Erreur lors de l'envoi");
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Erreur lors de l'envoi");
+      }
 
       setIsSent(true);
       toast.success("Message envoyé avec succès !");
       setFormData({ name: "", company: "", email: "", phone: "", companySize: "", message: "" });
     } catch (error) {
-      toast.error("Erreur lors de l'envoi. Veuillez réessayer ou contacter contact@skillcruit.app.");
+      const message = error instanceof Error ? error.message : "Erreur lors de l'envoi. Veuillez réessayer ou contacter contact@skillcruit.app.";
+      toast.error(message);
     } finally {
       setIsLoading(false);
     }
