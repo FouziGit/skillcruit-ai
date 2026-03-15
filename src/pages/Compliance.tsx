@@ -17,7 +17,21 @@ export default function Compliance() {
       <SEOHead
         title="Conformité RGPD & Sécurité - Skillcruit | Données Protégées"
         description="Vos données RH protégées : hébergement européen, chiffrement AES-256, conformité RGPD garantie. Audits et traçabilité complète."
-        canonical="https://skillcruit.app/conformite"
+        canonical="https://skillcruit.fr/conformite"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Conformité RGPD & Sécurité Skillcruit",
+          "description": "Hébergement européen, chiffrement AES-256, conformité RGPD garantie.",
+          "url": "https://skillcruit.fr/conformite",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
+              { "@type": "ListItem", "position": 2, "name": "Conformité", "item": "https://skillcruit.fr/conformite" },
+            ],
+          },
+        }}
       />
       
       <Navbar />

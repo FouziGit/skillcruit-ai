@@ -5,6 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, Clock, ArrowLeft, Tag, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BlurFade } from "@/components/ui/blur-fade";
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { type ReactNode } from "react";
 
@@ -166,23 +167,55 @@ const BlogPost = () => {
         canonical={`https://skillcruit.fr/blog/${post.slug}`}
         jsonLd={{
           "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": post.title,
-          "description": post.excerpt,
-          "datePublished": post.date,
-          "author": {
-            "@type": "Organization",
-            "name": post.author,
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Skillcruit",
-            "url": "https://skillcruit.fr",
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `https://skillcruit.fr/blog/${post.slug}`,
-          },
+          "@graph": [
+            {
+              "@type": "BlogPosting",
+              "headline": post.title,
+              "description": post.excerpt,
+              "datePublished": post.date,
+              "dateModified": post.date,
+              "wordCount": post.content.split(/\s+/).length,
+              "inLanguage": "fr-FR",
+              "author": {
+                "@type": "Organization",
+                "name": post.author,
+                "url": "https://skillcruit.fr",
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Skillcruit",
+                "url": "https://skillcruit.fr",
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://skillcruit.fr/blog/${post.slug}`,
+              },
+              "keywords": post.tags.join(", "),
+              "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [".prose-content h2", ".prose-content p:first-of-type"],
+              },
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://skillcruit.fr/blog" },
+                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://skillcruit.fr/blog/${post.slug}` },
+              ],
+            },
+            ...(post.faq && post.faq.length > 0 ? [{
+              "@type": "FAQPage",
+              "mainEntity": post.faq.map(f => ({
+                "@type": "Question",
+                "name": f.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.answer,
+                },
+              })),
+            }] : []),
+          ],
         }}
       />
 
@@ -266,6 +299,28 @@ const BlogPost = () => {
                 {renderContent()}
               </div>
             </AnimatedSection>
+
+            {/* FAQ Section */}
+            {post.faq && post.faq.length > 0 && (
+              <AnimatedSection delay={0.25}>
+                <section className="mt-14" aria-labelledby="faq-section">
+                  <h2 id="faq-section" className="text-2xl font-bold mb-6 text-foreground">Questions fréquentes</h2>
+                  <div className="space-y-4">
+                    {post.faq.map((item, idx) => (
+                      <details key={idx} className="group rounded-xl border border-border/60 bg-white overflow-hidden">
+                        <summary className="flex items-center justify-between cursor-pointer p-5 font-semibold text-foreground hover:text-primary transition-colors">
+                          {item.question}
+                          <span className="ml-2 text-muted-foreground group-open:rotate-180 transition-transform" aria-hidden="true">▾</span>
+                        </summary>
+                        <div className="px-5 pb-5 text-muted-foreground leading-relaxed border-t border-border/40 pt-4">
+                          {item.answer}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              </AnimatedSection>
+            )}
 
             {/* CTA */}
             <AnimatedSection delay={0.3}>

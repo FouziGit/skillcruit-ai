@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 import { Users, FileText, Clock, TrendingUp, Star, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { BlurFade } from "@/components/ui/blur-fade";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/animated-section";
 
 const candidates = [
@@ -49,6 +50,20 @@ const Demo = () => {
         title="Démo interactive Skillcruit - Découvrez la présélection en action"
         description="Explorez notre dashboard interactif et découvrez comment Skillcruit analyse et classe les CV en quelques secondes."
         canonical="https://skillcruit.fr/demo"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Démo interactive Skillcruit",
+          "description": "Dashboard interactif de présélection de CV avec scoring NLP en temps réel.",
+          "url": "https://skillcruit.fr/demo",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
+              { "@type": "ListItem", "position": 2, "name": "Démo", "item": "https://skillcruit.fr/demo" },
+            ],
+          },
+        }}
       />
 
       <Navbar />

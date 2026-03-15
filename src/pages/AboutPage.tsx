@@ -17,7 +17,27 @@ export default function AboutPage() {
       <SEOHead
         title="À Propos de Skillcruit | Notre Mission IA & Recrutement"
         description="Notre mission : rendre le recrutement plus rapide, fiable et juste. Découvrez l'équipe et les valeurs derrière Skillcruit."
-        canonical="https://skillcruit.app/a-propos"
+        canonical="https://skillcruit.fr/a-propos"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "À propos de Skillcruit",
+          "description": "Notre mission : rendre le recrutement plus rapide, fiable et juste.",
+          "url": "https://skillcruit.fr/a-propos",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Skillcruit",
+            "url": "https://skillcruit.fr",
+            "description": "Présélection intelligente de candidats par NLP",
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://skillcruit.fr" },
+              { "@type": "ListItem", "position": 2, "name": "À propos", "item": "https://skillcruit.fr/a-propos" },
+            ],
+          },
+        }}
       />
       
       <Navbar />

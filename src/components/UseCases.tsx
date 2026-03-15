@@ -1,6 +1,6 @@
 import { Users, Briefcase, Building2, Clock } from "lucide-react";
-import { motion } from "framer-motion";
-import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/animated-section";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { MagicCard } from "@/components/ui/magic-card";
 
 const useCases = [
   {
@@ -35,25 +35,23 @@ const useCases = [
 
 export const UseCases = () => {
   return (
-    <section className="py-24 md:py-32 section-light relative overflow-hidden" aria-labelledby="use-cases-title">
+    <section className="py-24 md:py-32 relative overflow-hidden" aria-labelledby="use-cases-title">
       <div className="container px-6 relative">
-        <AnimatedSection className="max-w-2xl mx-auto text-center mb-16">
-          <h2 id="use-cases-title" className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-            Cas d'usage <span className="text-primary">RH</span>
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Skillcruit s'adapte à tous les contextes de recrutement.
-          </p>
-        </AnimatedSection>
+        <BlurFade delay={0} inView>
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <h2 id="use-cases-title" className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+              Cas d'usage <span className="text-primary">RH</span>
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Skillcruit s'adapte à tous les contextes de recrutement.
+            </p>
+          </div>
+        </BlurFade>
 
-        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto" staggerDelay={0.1}>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {useCases.map((useCase, index) => (
-            <StaggerItem key={index}>
-              <motion.article
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.3 }}
-                className="p-6 rounded-2xl bg-white border border-border/60 shadow-sm hover:shadow-md h-full group transition-all duration-300"
-              >
+            <BlurFade key={index} delay={0.1 + index * 0.1} inView>
+              <MagicCard className="p-6 rounded-2xl h-full" gradientColor="hsl(220, 90%, 97%)">
                 <div className={`w-12 h-12 rounded-xl ${useCase.iconColor} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
                   <useCase.icon className="w-6 h-6" aria-hidden="true" />
                 </div>
@@ -67,10 +65,10 @@ export const UseCases = () => {
                     {useCase.benefit}
                   </span>
                 </div>
-              </motion.article>
-            </StaggerItem>
+              </MagicCard>
+            </BlurFade>
           ))}
-        </StaggerContainer>
+        </div>
       </div>
     </section>
   );

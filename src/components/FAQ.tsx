@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/animated-section";
+import { BlurFade } from "@/components/ui/blur-fade";
 
 const faqs = [
   {
@@ -37,30 +37,30 @@ export const FAQ = () => {
   return (
     <section className="py-24 md:py-32 section-light relative overflow-hidden" aria-labelledby="faq-title">
       <div className="container px-6 relative">
-        <AnimatedSection className="max-w-2xl mx-auto text-center mb-14">
-          <h2 id="faq-title" className="text-3xl md:text-4xl font-bold text-balance">Questions fréquentes</h2>
-        </AnimatedSection>
+        <BlurFade delay={0} inView>
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <h2 id="faq-title" className="text-3xl md:text-4xl font-bold text-balance">Questions fréquentes</h2>
+          </div>
+        </BlurFade>
 
         <div className="max-w-2xl mx-auto">
-          <StaggerContainer staggerDelay={0.1}>
-            <Accordion type="single" collapsible className="space-y-3">
-              {faqs.map((faq, index) => (
-                <StaggerItem key={index}>
-                  <AccordionItem
-                    value={`item-${index}`}
-                    className="bg-white rounded-xl px-6 border border-border/60 shadow-sm overflow-hidden"
-                  >
-                    <AccordionTrigger className="text-left font-medium hover:no-underline py-5 text-base">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </StaggerItem>
-              ))}
-            </Accordion>
-          </StaggerContainer>
+          <Accordion type="single" collapsible className="space-y-3">
+            {faqs.map((faq, index) => (
+              <BlurFade key={index} delay={0.05 + index * 0.08} inView>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="bg-white rounded-xl px-6 border border-border/60 shadow-sm overflow-hidden"
+                >
+                  <AccordionTrigger className="text-left font-medium hover:no-underline py-5 text-base">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </BlurFade>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

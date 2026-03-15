@@ -2,13 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send, Loader2, CheckCircle2 } from "lucide-react";
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import { AnimatedSection } from "@/components/ui/animated-section";
+import { useState, useRef, useEffect } from "react";
+import { motion } from "motion/react";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { Confetti, type ConfettiRef } from "@/components/ui/confetti";
 import { toast } from "sonner";
 
 export const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const confettiRef = useRef<ConfettiRef>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [formData, setFormData] = useState({
@@ -19,6 +21,16 @@ export const Contact = () => {
     companySize: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (isSent) {
+      confettiRef.current?.fire({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+    }
+  }, [isSent]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,11 +64,13 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="py-24 md:py-32 relative overflow-hidden" aria-labelledby="contact-title">
+      <Confetti ref={confettiRef} manualstart className="fixed inset-0 z-50 pointer-events-none" />
+
       <div className="container px-6 relative">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left - Info */}
-            <AnimatedSection direction="right">
+            <BlurFade delay={0} inView>
               <div className="space-y-8">
                 <div>
                   <h2 id="contact-title" className="text-3xl md:text-4xl font-bold mb-4 text-balance">
@@ -96,10 +110,10 @@ export const Contact = () => {
                   ))}
                 </div>
               </div>
-            </AnimatedSection>
+            </BlurFade>
 
             {/* Right - Form */}
-            <AnimatedSection direction="left" delay={0.1}>
+            <BlurFade delay={0.15} inView>
               {isSent ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -210,7 +224,7 @@ export const Contact = () => {
                   </Button>
                 </form>
               )}
-            </AnimatedSection>
+            </BlurFade>
           </div>
         </div>
       </div>

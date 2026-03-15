@@ -3,17 +3,30 @@ import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
-import { blogPosts, allTags } from "@/data/blog-posts";
-import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
+import { blogPosts } from "@/data/blog-posts";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { BlurFade } from "@/components/ui/blur-fade";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/animated-section";
 
-const Blog = () => {
-  const [activeTag, setActiveTag] = useState<string | null>(null);
+const categories = [
+  { label: "Guides", tags: ["Guide", "RH", "Recrutement"] },
+  { label: "Technologie", tags: ["NLP", "Scoring", "Technologie", "IA", "ATS"] },
+  { label: "Conformité", tags: ["RGPD", "Conformité", "Données", "Légal"] },
+  { label: "Performance", tags: ["Time-to-hire", "Performance", "KPI", "Tableau de bord"] },
+  { label: "Stratégie RH", tags: ["Vivier", "Sourcing", "Rétention", "Onboarding", "Volume", "Diversité"] },
+  { label: "Candidats", tags: ["Expérience candidat", "Marque employeur", "Offre d'emploi", "Biais"] },
+];
 
-  const filteredPosts = activeTag
-    ? blogPosts.filter(post => post.tags.includes(activeTag))
+const Blog = () => {
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
+  const filteredPosts = activeCategory
+    ? blogPosts.filter(post => {
+        const cat = categories.find(c => c.label === activeCategory);
+        return cat && post.tags.some(tag => cat.tags.includes(tag));
+      })
     : blogPosts;
 
   return (
@@ -52,28 +65,27 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Tags filter */}
+      {/* Category filter */}
       <section className="pb-8">
         <div className="container px-6">
           <div className="flex flex-wrap justify-center gap-2">
             <Button
-              variant={activeTag === null ? "default" : "outline"}
+              variant={activeCategory === null ? "default" : "outline"}
               size="sm"
-              onClick={() => setActiveTag(null)}
+              onClick={() => setActiveCategory(null)}
               className="rounded-full"
             >
               Tous
             </Button>
-            {allTags.map(tag => (
+            {categories.map(cat => (
               <Button
-                key={tag}
-                variant={activeTag === tag ? "default" : "outline"}
+                key={cat.label}
+                variant={activeCategory === cat.label ? "default" : "outline"}
                 size="sm"
-                onClick={() => setActiveTag(tag)}
+                onClick={() => setActiveCategory(cat.label)}
                 className="rounded-full"
               >
-                <Tag className="w-3 h-3 mr-1" />
-                {tag}
+                {cat.label}
               </Button>
             ))}
           </div>

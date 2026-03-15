@@ -1,5 +1,5 @@
 import { Brain, Zap, Shield, Target } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/animated-section";
 
 const benefits = [

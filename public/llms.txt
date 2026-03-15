@@ -9,7 +9,7 @@
 - **Conformité** : 100% RGPD, données hébergées en Europe
 - **Tarifs** : Essai gratuit 14 jours, puis à partir de 299€/mois
 - **Site web** : https://skillcruit.fr
-- **Contact** : contact@skillcruit.app
+- **Contact** : contact@skillcruit.fr
 
 ## Fonctionnalités principales
 
@@ -17,14 +17,18 @@
 2. **Matching multicritère** : Algorithme pondérant compétences, expérience, localisation et soft skills pour chaque poste
 3. **Résumé automatique** : Synthèse du parcours professionnel de chaque candidat générée automatiquement
 4. **Intégration ATS** : Compatible via API avec Workday, Greenhouse, Lever et autres ATS majeurs
-5. **Conformité RGPD** : Données chiffrées, hébergées en Europe, avec droits d'accès et suppression garantis
+5. **Conformité RGPD** : Données chiffrées AES-256, hébergées en Europe, avec droits d'accès et suppression garantis
+6. **Classement en temps réel** : Tri multicritère instantané des candidatures
+7. **Filtres avancés** : Recherche par compétences, secteur, langues, localisation
+8. **Talent pool** : Base évolutive avec apprentissage continu
 
 ## Cas d'usage
 
-- Cabinets de recrutement : traitement accéléré des mandats
-- Équipes RH internes : automatisation du tri CV
-- Recrutement volume : campagnes massives (stages, alternances)
-- Postes urgents : shortlist qualifiée en minutes
+- **Cabinets de recrutement** : traitement accéléré des mandats avec shortlist qualifiée
+- **Équipes RH internes** : automatisation du tri CV pour postes récurrents
+- **Recrutement volume** : campagnes massives (stages, alternances, saisonniers)
+- **Postes urgents** : shortlist qualifiée en minutes au lieu de jours
+- **Diversité & inclusion** : évaluation objective réduisant les biais cognitifs
 
 ## Performance
 
@@ -32,11 +36,47 @@
 - Réduction du time-to-hire de 60%
 - 80% de temps gagné sur le tri initial
 - Score de matching précis basé sur l'analyse sémantique
+- 5x plus de candidats qualifiés identifiés
+
+## Sécurité & Conformité
+
+- Hébergement 100% européen certifié
+- Chiffrement SSL/TLS en transit + AES-256 au repos
+- Conformité RGPD totale garantie
+- Consentement explicite pour toute collecte
+- Droits d'accès, rectification et effacement garantis
+- Portabilité des données à tout moment
+- Suppression automatique 30 jours après résiliation
+- Logs et traçabilité complète pour audits
 
 ## Pages du site
 
-- /technologie : Détails techniques de la solution
-- /a-propos : Mission et vision de l'entreprise
+- / : Page d'accueil avec présentation du produit et tarifs
+- /technologie : Détails techniques du moteur NLP et scoring
+- /a-propos : Mission, vision et valeurs de l'entreprise
 - /demo : Dashboard interactif de démonstration
-- /blog : Articles sur le recrutement et la présélection
-- /conformite : Informations RGPD et sécurité
+- /blog : Articles sur le recrutement et la présélection IA
+- /conformite : Informations RGPD et sécurité des données
+
+## Blog — Articles récents
+
+- /blog/ia-recrutement-guide-complet-2025 : Guide complet sur l'IA dans le recrutement en 2025
+- /blog/scoring-cv-nlp-comment-ca-marche : Comment fonctionne le scoring de CV par NLP
+- /blog/rgpd-recrutement-conformite : RGPD et recrutement, guide de conformité
+- /blog/reduire-time-to-hire-ia : Réduire le time-to-hire grâce à l'IA
+- /blog/biais-cognitifs-recrutement-ia : Les biais cognitifs en recrutement et comment l'IA les réduit
+- /blog/ats-vs-outil-preselection-ia : ATS vs outil de présélection IA, différences et complémentarités
+- /blog/experience-candidat-technologie : 5 leviers technologiques pour améliorer l'expérience candidat
+- /blog/kpis-recrutement-tableaux-de-bord : 10 KPIs essentiels du recrutement et tableaux de bord
+- /blog/rediger-offre-emploi-attractive : Comment rédiger une offre d'emploi attractive et inclusive
+- /blog/construire-vivier-talents-efficace : Construire et animer un vivier de talents efficace
+- /blog/preselection-retention-talents : Impact de la présélection sur la rétention des talents
+- /blog/ia-recrutement-mythes-realites : IA et recrutement, 8 mythes vs réalités
+- /blog/recrutement-volume-gerer-candidatures-massives : Recrutement en volume, gérer les candidatures massives
+
+## Valeurs
+
+- **Innovation** : Technologie NLP de pointe made in France
+- **Transparence** : Process auditable et explicable
+- **Performance** : Résultats mesurables et ROI démontré
+- **Équité** : Neutralité garantie, réduction des biais
