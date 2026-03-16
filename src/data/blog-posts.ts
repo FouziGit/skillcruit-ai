@@ -74,7 +74,7 @@ La technologie est un outil, pas une baguette magique. Voici les pièges les plu
 ## En résumé
 
 L'automatisation de la présélection est devenue un levier stratégique pour les équipes RH. L'essentiel est de choisir un outil transparent, conforme au RGPD, et qui s'intègre à votre processus existant. Pour voir concrètement ce que cela donne, vous pouvez explorer notre [dashboard de démonstration](/demo).`,
-    date: "2025-03-10",
+    date: "2026-03-16",
     readTime: "8 min",
     tags: ["Recrutement", "RH", "Guide", "Présélection"],
     author: "Équipe Skillcruit",
@@ -145,7 +145,7 @@ Le NLP n'est pas infaillible. Voici quelques points de vigilance :
 - Le score est un outil d'aide à la décision, pas une décision en soi. Il doit toujours être complété par une lecture humaine des meilleurs profils
 
 Pour mieux comprendre comment l'IA lutte contre les biais dans le tri de CV, consultez notre article sur les [biais cognitifs en recrutement](/blog/biais-cognitifs-recrutement-ia). Et pour en savoir plus sur l'ensemble des fonctionnalités de scoring et de matching, consultez notre page [technologie](/technologie).`,
-    date: "2025-02-28",
+    date: "2026-03-16",
     readTime: "7 min",
     tags: ["NLP", "Scoring", "Technologie", "CV"],
     author: "Équipe Skillcruit",
@@ -220,7 +220,7 @@ Voici les actions concrètes à mettre en place dans votre processus de recrutem
 ## En résumé
 
 La conformité RGPD en recrutement n'est pas un obstacle, c'est un cadre qui protège à la fois les candidats et les entreprises. En choisissant des outils conformes et en formant vos équipes, vous réduisez vos risques juridiques tout en améliorant la confiance des candidats dans votre processus.`,
-    date: "2025-02-15",
+    date: "2026-03-16",
     readTime: "9 min",
     tags: ["RGPD", "Conformité", "Données", "Légal"],
     author: "Équipe Skillcruit",
@@ -300,7 +300,7 @@ Ne pas moderniser son processus de recrutement a un coût bien réel. Au-delà d
 Le retour sur investissement d'un outil de présélection est généralement atteint en moins de 3 mois, même pour les petites équipes RH.
 
 Pour en savoir plus sur le fonctionnement de notre solution et les garanties de [conformité RGPD](/blog/rgpd-recrutement-conformite), n'hésitez pas à [demander une démo](/#contact).`,
-    date: "2025-01-20",
+    date: "2026-03-16",
     readTime: "8 min",
     tags: ["Time-to-hire", "Performance", "KPI", "Recrutement"],
     author: "Équipe Skillcruit",
@@ -390,7 +390,7 @@ L'IA n'élimine pas tous les biais. Elle peut même en créer de nouveaux si ell
 ## En résumé
 
 Les biais cognitifs sont inévitables dans tout processus de décision humain. En recrutement, ils ont un impact direct sur la qualité des embauches et la diversité. L'IA ne remplace pas le jugement humain, mais elle fournit un premier filtre objectif qui réduit l'influence des biais sur la présélection. Pour aller plus loin, découvrez notre approche sur la page [à propos](/a-propos) ou [demandez une démo](/#contact).`,
-    date: "2025-03-25",
+    date: "2026-03-16",
     readTime: "10 min",
     tags: ["Biais", "IA", "Diversité", "Recrutement"],
     author: "Équipe Skillcruit",
@@ -485,7 +485,7 @@ Non. Les deux outils répondent à des besoins différents. L'ATS gère le proce
 
 **Combien ça coûte d'ajouter un outil IA à mon ATS ?**
 Les outils de présélection IA sont généralement facturés par nombre de postes ou de candidatures traités. Le coût est très vite amorti par le temps gagné sur le tri. Consultez nos [tarifs](/tarifs) ou [demandez une démo personnalisée](/#contact).`,
-    date: "2025-04-02",
+    date: "2026-03-16",
     readTime: "9 min",
     tags: ["ATS", "Outil", "Comparatif", "Technologie"],
     author: "Équipe Skillcruit",
@@ -576,7 +576,7 @@ Ces métriques font partie des [KPIs essentiels du recrutement](/blog/kpis-recru
 ## En résumé
 
 L'expérience candidat n'est pas un "nice to have" : c'est un avantage compétitif. Les entreprises qui traitent bien leurs candidats attirent plus de talents, améliorent leur marque employeur, et réduisent leurs coûts de recrutement. La technologie est un levier puissant pour y parvenir, à condition de l'utiliser au service de l'humain, pas à sa place. Pour découvrir comment Skillcruit améliore l'expérience candidat, [demandez une démo](/#contact).`,
-    date: "2025-04-10",
+    date: "2026-03-16",
     readTime: "9 min",
     tags: ["Expérience candidat", "Marque employeur", "RH", "Technologie"],
     author: "Équipe Skillcruit",
@@ -691,7 +691,7 @@ Un bon tableau de bord RH respecte ces principes :
 ## En résumé
 
 Piloter le recrutement par les données, c'est passer d'un centre de coût à un levier stratégique. Les 10 KPIs présentés ici couvrent l'ensemble du processus, de l'attraction à la rétention. Combinés à un outil de présélection IA, ils permettent d'identifier et d'agir sur les leviers d'amélioration les plus impactants. Explorez notre [dashboard interactif](/demo) pour voir ces données en action.`,
-    date: "2025-04-18",
+    date: "2026-03-16",
     readTime: "11 min",
     tags: ["KPI", "Tableau de bord", "RH", "Performance"],
     author: "Équipe Skillcruit",
@@ -796,7 +796,7 @@ Voici la structure que nous recommandons :
 ## En résumé
 
 L'offre d'emploi est le premier filtre de votre processus de recrutement. Une offre bien structurée, avec des critères hiérarchisés et un salaire transparent, attire les bons profils et facilite le travail de présélection, qu'il soit manuel ou automatisé. Pour tester l'impact d'une offre optimisée avec le scoring IA, [demandez une démo](/#contact) de Skillcruit.`,
-    date: "2025-04-25",
+    date: "2026-03-16",
     readTime: "10 min",
     tags: ["Offre d'emploi", "Rédaction", "Sourcing", "Recrutement"],
     author: "Équipe Skillcruit",
@@ -909,7 +909,7 @@ Suivez ces [KPIs](/blog/kpis-recrutement-tableaux-de-bord) dédiés au vivier :
 ## En résumé
 
 Un vivier de talents bien construit, structuré et animé est l'un des actifs les plus précieux d'une équipe de recrutement. Combiné à un outil de scoring IA qui pré-qualifie automatiquement les candidats, il transforme le recrutement d'une course contre la montre en un processus maîtrisé et proactif. Pour voir comment [Skillcruit](/technologie) intègre la gestion du vivier au scoring, [demandez une démo](/#contact).`,
-    date: "2025-05-05",
+    date: "2026-03-16",
     readTime: "10 min",
     tags: ["Vivier", "Talent pool", "RGPD", "Sourcing"],
     author: "Équipe Skillcruit",
@@ -993,7 +993,7 @@ Pendant le processus de présélection, certains signaux peuvent indiquer un ris
 ## En résumé
 
 La rétention commence au recrutement. Une présélection fine, objective et transparente ne garantit pas que chaque embauche sera un succès, mais elle réduit significativement les erreurs de casting qui mènent aux départs précoces. Combinée à un onboarding structuré et un management attentif, elle pose les bases d'une relation durable entre l'entreprise et le collaborateur. Pour améliorer votre processus de présélection, découvrez comment [Skillcruit](/technologie) fonctionne ou [demandez une démo personnalisée](/#contact).`,
-    date: "2025-05-15",
+    date: "2026-03-16",
     readTime: "10 min",
     tags: ["Rétention", "Onboarding", "Qualité", "RH"],
     author: "Équipe Skillcruit",
@@ -1088,7 +1088,7 @@ Pour résumer, voici ce que l'IA apporte concrètement aux professionnels RH :
 ## En résumé
 
 L'IA en recrutement n'est ni la solution miracle que le marketing promet, ni le danger que les sceptiques redoutent. C'est un outil puissant qui, bien utilisé, améliore la vitesse, l'objectivité et la qualité du recrutement. L'essentiel est de comprendre ses capacités et ses limites, et de choisir un outil transparent et conforme. Pour en savoir plus, explorez notre page [technologie](/technologie) ou [demandez une démo](/#contact) pour voir concrètement ce que ça change.`,
-    date: "2025-05-25",
+    date: "2026-03-16",
     readTime: "11 min",
     tags: ["IA", "Mythes", "Guide", "RH"],
     author: "Équipe Skillcruit",
@@ -1203,7 +1203,7 @@ Croissance rapide, campagnes commerciales, nouveaux contrats. Profils homogènes
 ## En résumé
 
 Le recrutement en volume nécessite une approche industrialisée sans être déshumanisée. L'automatisation du tri par IA est le levier le plus impactant : elle divise par 10 le temps de présélection tout en améliorant la qualité du matching. Combinée à une communication automatisée et des sessions collectives structurées, elle permet de recruter vite et bien, même à grande échelle. Pour tester Skillcruit sur un recrutement en volume, [demandez une démo personnalisée](/#contact).`,
-    date: "2025-06-05",
+    date: "2026-03-16",
     readTime: "11 min",
     tags: ["Volume", "Recrutement", "Stratégie", "Scalabilité"],
     author: "Équipe Skillcruit",
