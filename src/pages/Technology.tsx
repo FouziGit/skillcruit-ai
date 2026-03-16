@@ -21,7 +21,7 @@ export default function Technology() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Technologie NLP - Skillcruit | Analyse sémantique de CV"
         description="Découvrez notre moteur de présélection : scoring NLP, matching intelligent, résumés automatiques. Technologie made in France, 100% RGPD."

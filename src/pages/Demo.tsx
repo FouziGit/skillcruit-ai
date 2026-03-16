@@ -45,7 +45,7 @@ const Demo = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Démo interactive Skillcruit - Découvrez la présélection en action"
         description="Explorez notre dashboard interactif et découvrez comment Skillcruit analyse et classe les CV en quelques secondes."
@@ -69,7 +69,7 @@ const Demo = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-12 bg-gradient-to-b from-slate-50 to-white">
+      <section className="pt-28 pb-12 bg-gradient-to-b from-slate-50/30 to-transparent">
         <div className="container px-6">
           <AnimatedSection className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">

@@ -14,7 +14,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
+    <div className="min-h-screen bg-transparent text-foreground flex flex-col">
       <SEOHead
         title="Page Non Trouvée - Skillcruit"
         description="Cette page n'existe pas. Retournez à l'accueil de Skillcruit."

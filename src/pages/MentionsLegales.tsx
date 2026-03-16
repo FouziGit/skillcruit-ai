@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 
 export default function MentionsLegales() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Mentions Légales - Skillcruit"
         description="Mentions légales de Skillcruit : informations sur l'éditeur, hébergement, propriété intellectuelle et données personnelles."

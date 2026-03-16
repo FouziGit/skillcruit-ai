@@ -13,7 +13,7 @@ export default function Compliance() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Conformité RGPD & Sécurité - Skillcruit | Données Protégées"
         description="Vos données RH protégées : hébergement européen, chiffrement AES-256, conformité RGPD garantie. Audits et traçabilité complète."

@@ -160,7 +160,7 @@ const BlogPost = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title={`${post.title} | Blog Skillcruit`}
         description={post.excerpt}

@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 
 export default function Terms() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Conditions Générales d'Utilisation - Skillcruit"
         description="CGU de Skillcruit : conditions d'utilisation du service SaaS de présélection IA, tarification, responsabilités."

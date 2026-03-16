@@ -30,7 +30,7 @@ const Blog = () => {
     : blogPosts;
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Blog Skillcruit - Recrutement, scoring et bonnes pratiques RH"
         description="Découvrez nos articles sur le recrutement moderne, le scoring de CV, la conformité RGPD et les bonnes pratiques RH."
@@ -52,7 +52,7 @@ const Blog = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-gradient-to-b from-slate-50 to-white">
+      <section className="pt-28 pb-16 bg-gradient-to-b from-slate-50/30 to-transparent">
         <div className="container px-6">
           <AnimatedSection className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">

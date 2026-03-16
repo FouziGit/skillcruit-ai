@@ -13,7 +13,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="À Propos de Skillcruit | Notre Mission IA & Recrutement"
         description="Notre mission : rendre le recrutement plus rapide, fiable et juste. Découvrez l'équipe et les valeurs derrière Skillcruit."

@@ -37,7 +37,7 @@ const combinedJsonLd = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Skillcruit - Présélection intelligente de CV | Recrutez mieux, plus vite"
         description="Analysez, scorez et classez vos candidatures en 30 secondes. Présélection intelligente pour recruteurs. Essai gratuit 14 jours, 100% RGPD."

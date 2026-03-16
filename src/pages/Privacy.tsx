@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-transparent text-foreground">
       <SEOHead
         title="Politique de Confidentialité - Skillcruit"
         description="Découvrez comment Skillcruit protège vos données personnelles. Conformité RGPD, droits d'accès, hébergement européen."
