@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { ChatWidget } from "@/components/ChatWidget";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 import Index from "./pages/Index";
 
 const Technology = lazy(() => import("./pages/Technology"));
@@ -32,6 +33,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <BackgroundPaths />
+        <div className="relative z-10">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -48,6 +51,7 @@ const App = () => (
           </Routes>
         </Suspense>
         <ChatWidget />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
