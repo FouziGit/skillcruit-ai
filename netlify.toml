@@ -2,6 +2,27 @@
   command = "npm run build"
   publish = "dist"
 
+# Force HTTPS (http → https)
+[[redirects]]
+  from = "http://skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
+
+# Force non-www (www → non-www)
+[[redirects]]
+  from = "https://www.skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
+
+# Force non-www HTTP (http://www → https://non-www)
+[[redirects]]
+  from = "http://www.skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
+
 # SPA redirect - all routes to index.html
 [[redirects]]
   from = "/*"
