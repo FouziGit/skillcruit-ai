@@ -12,7 +12,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-b from-slate-50/30 to-white/30" aria-labelledby="hero-title">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-16" aria-labelledby="hero-title">
       <GridPattern width={40} height={40} className="absolute inset-0 opacity-[0.03] [mask-image:radial-gradient(500px_circle_at_center,white,transparent)]" />
 
       <div className="container relative z-10 px-6 py-16 md:py-24">
