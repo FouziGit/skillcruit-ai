@@ -63,7 +63,7 @@ export default function Technology() {
         </section>
 
         {/* How it works */}
-        <section className="py-16 border-t border-border/50" aria-labelledby="how-it-works">
+        <section className="py-16" aria-labelledby="how-it-works">
           <div className="container px-6">
             <h2 id="how-it-works" className="text-2xl md:text-3xl font-bold text-center mb-12">Comment ça fonctionne</h2>
             
@@ -84,7 +84,7 @@ export default function Technology() {
         </section>
 
         {/* Features grid */}
-        <section className="py-16 bg-card/30 border-y border-border/50" aria-labelledby="features-title">
+        <section className="py-16" aria-labelledby="features-title">
           <div className="container px-6">
             <h2 id="features-title" className="text-2xl md:text-3xl font-bold text-center mb-12">Fonctionnalités</h2>
             

@@ -5,7 +5,6 @@ import { BlurFade } from "@/components/ui/blur-fade";
 export const Footer = () => {
   return (
     <footer className="bg-slate-900 text-slate-300 relative" role="contentinfo">
-      <div className="h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
       <div className="container px-6 py-14">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-10">

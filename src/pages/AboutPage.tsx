@@ -61,7 +61,7 @@ export default function AboutPage() {
         </section>
 
         {/* Vision */}
-        <section className="py-16 border-t border-border/50" aria-labelledby="vision-title">
+        <section className="py-16" aria-labelledby="vision-title">
           <div className="container px-6">
             <h2 id="vision-title" className="sr-only">Notre vision et engagement</h2>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
@@ -91,7 +91,7 @@ export default function AboutPage() {
         </section>
 
         {/* Values */}
-        <section className="py-16 bg-card/30 border-y border-border/50" aria-labelledby="values-title">
+        <section className="py-16" aria-labelledby="values-title">
           <div className="container px-6">
             <h2 id="values-title" className="text-2xl md:text-3xl font-bold text-center mb-12">Nos valeurs</h2>
             

@@ -58,7 +58,7 @@ export default function Compliance() {
         </section>
 
         {/* Security features */}
-        <section className="py-16 border-t border-border/50" aria-labelledby="security-features">
+        <section className="py-16" aria-labelledby="security-features">
           <div className="container px-6">
             <h2 id="security-features" className="sr-only">Fonctionnalités de sécurité</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
@@ -76,7 +76,7 @@ export default function Compliance() {
         </section>
 
         {/* RGPD Details */}
-        <section className="py-16 bg-card/30 border-y border-border/50" aria-labelledby="rgpd-details">
+        <section className="py-16" aria-labelledby="rgpd-details">
           <div className="container px-6">
             <div className="max-w-3xl mx-auto">
               <div className="p-6 rounded-lg glass-card border-primary/20">
