@@ -10,7 +10,7 @@ const ContactFormSchema = z.object({
   company: z.string().min(2).max(100),
   phone: z.string().max(20).optional(),
   companySize: z.string().max(50).optional(),
-  message: z.string().min(10).max(2000),
+  message: z.string().max(2000).optional(),
 });
 
 // Simple rate limiting (in-memory, resets on redeploy)
@@ -89,7 +89,7 @@ export const handler = async (event: any) => {
     const escapedCompany = escapeHtml(validatedData.company);
     const escapedPhone = validatedData.phone ? escapeHtml(validatedData.phone) : 'Non renseigné';
     const escapedCompanySize = validatedData.companySize ? escapeHtml(validatedData.companySize) : 'Non renseignée';
-    const escapedMessage = escapeHtml(validatedData.message).replace(/\n/g, '<br/>');
+    const escapedMessage = validatedData.message ? escapeHtml(validatedData.message).replace(/\n/g, '<br/>') : 'Non renseigné';
 
     const data = await resend.emails.send({
       from: 'Skillcruit <noreply@skillcruit.app>',
