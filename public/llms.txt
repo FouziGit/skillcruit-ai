@@ -73,6 +73,7 @@
 - /blog/preselection-retention-talents : Impact de la présélection sur la rétention des talents
 - /blog/ia-recrutement-mythes-realites : IA et recrutement, 8 mythes vs réalités
 - /blog/recrutement-volume-gerer-candidatures-massives : Recrutement en volume, gérer les candidatures massives
+- /blog/recrutement-par-competences-skills-based-hiring : Recrutement par les compétences (skills-based hiring) : guide complet, mise en œuvre et impact sur la qualité des recrutements
 
 ## Valeurs
 
