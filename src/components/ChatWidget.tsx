@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useDragControls } from "motion/react";
 import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -25,6 +25,8 @@ export const ChatWidget = () => {
     { id: 0, text: "Bonjour ! Je suis l'assistant Skillcruit. Comment puis-je vous aider ?", isBot: true },
   ]);
   const [input, setInput] = useState("");
+  const dragControls = useDragControls();
+  const constraintsRef = useRef<HTMLDivElement>(null);
 
   const addMessage = (text: string, isBot: boolean) => {
     setMessages(prev => [...prev, { id: Date.now(), text, isBot }]);
@@ -52,17 +54,24 @@ export const ChatWidget = () => {
 
   return (
     <>
+      {/* Fullscreen drag constraint layer */}
+      <div ref={constraintsRef} className="fixed inset-0 pointer-events-none z-40" />
+
       {/* Chat bubble */}
       <AnimatePresence>
         {!isOpen && (
           <motion.button
+            drag
+            dragMomentum={false}
+            dragElastic={0}
+            dragConstraints={constraintsRef}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary text-white shadow-lg shadow-primary/25 flex items-center justify-center"
+            className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary text-white shadow-lg shadow-primary/25 flex items-center justify-center cursor-grab active:cursor-grabbing"
             aria-label="Ouvrir le chat"
           >
             <MessageCircle className="w-6 h-6" />
@@ -74,6 +83,12 @@ export const ChatWidget = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            drag
+            dragMomentum={false}
+            dragElastic={0}
+            dragConstraints={constraintsRef}
+            dragListener={false}
+            dragControls={dragControls}
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -81,8 +96,11 @@ export const ChatWidget = () => {
             className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-xl border border-border/60 flex flex-col overflow-hidden"
             style={{ height: "500px", maxHeight: "calc(100vh - 6rem)" }}
           >
-            {/* Header */}
-            <div className="px-5 py-4 bg-primary text-white flex items-center justify-between flex-shrink-0">
+            {/* Header — drag handle */}
+            <div
+              onPointerDown={(e) => dragControls.start(e)}
+              className="px-5 py-4 bg-primary text-white flex items-center justify-between flex-shrink-0 cursor-grab active:cursor-grabbing select-none"
+            >
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                   <Bot className="w-4 h-4" />

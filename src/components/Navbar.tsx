@@ -1,13 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, LogIn, User } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
+import { useAuth } from "@/contexts/AuthContext";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, profile } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,9 +84,17 @@ export const Navbar = () => {
             </div>
 
             <div className="hidden md:block">
-              <Button size="sm" onClick={scrollToContact}>
-                Demander une démo
-              </Button>
+              {user ? (
+                <Button size="sm" onClick={() => navigate('/dashboard')}>
+                  <User className="w-4 h-4 mr-1" />
+                  {profile?.full_name?.split(' ')[0] || 'Dashboard'}
+                </Button>
+              ) : (
+                <Button size="sm" onClick={() => navigate('/connexion')}>
+                  <LogIn className="w-4 h-4 mr-1" />
+                  Se connecter
+                </Button>
+              )}
             </div>
 
             {/* Mobile menu button */}
@@ -131,21 +142,30 @@ export const Navbar = () => {
                     </motion.div>
                   ))}
                   <motion.div
-                    className="pt-3"
+                    className="pt-3 space-y-2"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
                   >
-                    <Button
-                      size="sm"
-                      className="w-full"
-                      onClick={() => {
-                        setIsOpen(false);
-                        scrollToContact();
-                      }}
-                    >
-                      Demander une démo
-                    </Button>
+                    {user ? (
+                      <Button
+                        size="sm"
+                        className="w-full"
+                        onClick={() => { setIsOpen(false); navigate('/dashboard'); }}
+                      >
+                        <User className="w-4 h-4 mr-1" />
+                        Mon Dashboard
+                      </Button>
+                    ) : (
+                      <Button
+                        size="sm"
+                        className="w-full"
+                        onClick={() => { setIsOpen(false); navigate('/connexion'); }}
+                      >
+                        <LogIn className="w-4 h-4 mr-1" />
+                        Se connecter
+                      </Button>
+                    )}
                   </motion.div>
                 </div>
               </motion.div>
