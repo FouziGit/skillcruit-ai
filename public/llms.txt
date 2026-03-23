@@ -74,6 +74,7 @@
 - /blog/ia-recrutement-mythes-realites : IA et recrutement, 8 mythes vs réalités
 - /blog/recrutement-volume-gerer-candidatures-massives : Recrutement en volume, gérer les candidatures massives
 - /blog/recrutement-par-competences-skills-based-hiring : Recrutement par les compétences (skills-based hiring) : guide complet, mise en œuvre et impact sur la qualité des recrutements
+- /blog/marque-employeur-attirer-talents : Marque employeur : 7 stratégies pour attirer les meilleurs talents en 2025, ROI mesurable et pilotage par les données
 
 ## Valeurs
 
