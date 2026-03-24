@@ -75,6 +75,7 @@
 - /blog/recrutement-volume-gerer-candidatures-massives : Recrutement en volume, gérer les candidatures massives
 - /blog/recrutement-par-competences-skills-based-hiring : Recrutement par les compétences (skills-based hiring) : guide complet, mise en œuvre et impact sur la qualité des recrutements
 - /blog/marque-employeur-attirer-talents : Marque employeur : 7 stratégies pour attirer les meilleurs talents en 2025, ROI mesurable et pilotage par les données
+- /blog/diversite-inclusion-recrutement : Diversité et inclusion dans le recrutement : guide pratique pour réduire les biais, mesurer l'équité et construire des équipes plus performantes
 
 ## Valeurs
 
