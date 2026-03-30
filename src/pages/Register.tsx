@@ -62,7 +62,7 @@ const Register = () => {
               </div>
               <h2 className="text-2xl font-bold text-foreground">Compte créé !</h2>
               <p className="text-muted-foreground mt-2">
-                Vérifiez votre email pour confirmer votre inscription, puis connectez-vous.
+                Votre compte a été créé avec succès. Vous pouvez maintenant vous connecter.
               </p>
               <Button className="mt-6" onClick={() => navigate('/connexion')}>
                 Se connecter
