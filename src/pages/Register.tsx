@@ -29,12 +29,17 @@ const Register = () => {
       await signUp(email, password, fullName, role);
       setSuccess(true);
     } catch (err: any) {
-      if (err.message?.includes('already registered')) {
+      console.error('SignUp error:', err);
+      if (err.message?.includes('already registered') || err.message?.includes('already been registered')) {
         setError('Cet email est déjà utilisé.');
-      } else if (err.message?.includes('Password')) {
+      } else if (err.message?.includes('Password') || err.message?.includes('password')) {
         setError('Le mot de passe doit contenir au moins 6 caractères.');
+      } else if (err.message?.includes('rate limit') || err.message?.includes('email rate limit')) {
+        setError('Trop de tentatives. Réessayez dans quelques minutes.');
+      } else if (err.message?.includes('not authorized') || err.message?.includes('Signups not allowed')) {
+        setError('Les inscriptions ne sont pas activées. Contactez l\'administrateur.');
       } else {
-        setError('Une erreur est survenue. Réessayez.');
+        setError(err.message || 'Une erreur est survenue. Réessayez.');
       }
     } finally {
       setLoading(false);
