@@ -17,7 +17,7 @@ import { StatistiquesPage } from '@/components/dashboard/candidate/StatistiquesP
 import { Navigate, Routes, Route } from 'react-router-dom';
 
 const Dashboard = () => {
-  const { profile, loading } = useAuth();
+  const { user, profile, loading } = useAuth();
 
   if (loading) {
     return (
@@ -27,7 +27,15 @@ const Dashboard = () => {
     );
   }
 
-  if (!profile) return <Navigate to="/connexion" replace />;
+  if (!user) return <Navigate to="/connexion" replace />;
+
+  if (!profile) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <DashboardLayout>
