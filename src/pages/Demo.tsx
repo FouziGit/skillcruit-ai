@@ -78,8 +78,16 @@ const Demo = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Explorez notre interface avec des données de démonstration. Découvrez comment Skillcruit analyse et classe vos candidats.
             </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-sm text-amber-700">
-              Données fictives à titre de démonstration
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-2">
+              <Link to="/demo/creer-offre">
+                <Button size="lg" className="group font-semibold">
+                  Essayer l'outil maintenant
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-sm text-amber-700">
+                Gratuit · Sans inscription
+              </div>
             </div>
           </AnimatedSection>
         </div>

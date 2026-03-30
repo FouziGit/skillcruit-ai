@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "dist"
 
+[dev]
+  command = "npm run dev"
+  targetPort = 8081
+  framework = "#custom"
+
 # Domain redirects (HTTPS + www→non-www) are handled by Netlify's
 # domain settings and "Force HTTPS" option in the dashboard.
 # Do NOT duplicate them here — it causes redirect chains that

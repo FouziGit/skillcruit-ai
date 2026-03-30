@@ -18,6 +18,9 @@ const Terms = lazy(() => import("./pages/Terms"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Demo = lazy(() => import("./pages/Demo"));
+const DemoCreerOffre = lazy(() => import("./pages/DemoCreerOffre"));
+const DemoOffre = lazy(() => import("./pages/DemoOffre"));
+const DemoDashboard = lazy(() => import("./pages/DemoDashboard"));
 const Login = lazy(() => import("./pages/Login"));
 const Register = lazy(() => import("./pages/Register"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
@@ -52,6 +55,9 @@ const App = () => (
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/demo" element={<Demo />} />
+              <Route path="/demo/creer-offre" element={<DemoCreerOffre />} />
+              <Route path="/demo/offre/:id" element={<DemoOffre />} />
+              <Route path="/demo/dashboard/:id" element={<DemoDashboard />} />
               <Route path="/connexion" element={<Login />} />
               <Route path="/inscription" element={<Register />} />
               <Route path="/dashboard" element={<Dashboard />} />
