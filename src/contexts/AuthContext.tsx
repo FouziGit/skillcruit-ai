@@ -32,13 +32,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchProfile = async (userId: string) => {
+  const fetchProfile = async (authUser: User) => {
     const { data } = await supabase
       .from('profiles')
       .select('*')
-      .eq('id', userId)
+      .eq('id', authUser.id)
       .single();
-    setProfile(data);
+
+    if (data) {
+      setProfile(data);
+    } else {
+      // Profiles table unavailable — fall back to auth metadata set during signUp
+      const meta = authUser.user_metadata ?? {};
+      setProfile({
+        id: authUser.id,
+        email: authUser.email ?? '',
+        full_name: meta.full_name ?? '',
+        role: (meta.role as Profile['role']) ?? 'candidate',
+      });
+    }
   };
 
   useEffect(() => {
@@ -52,7 +64,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       supabase.auth.getSession().then(({ data: { session } }) => {
         setSession(session);
         setUser(session?.user ?? null);
-        if (session?.user) fetchProfile(session.user.id);
+        if (session?.user) fetchProfile(session.user);
         setLoading(false);
       });
     }
@@ -62,7 +74,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setSession(session);
       setUser(session?.user ?? null);
       if (session?.user) {
-        fetchProfile(session.user.id);
+        fetchProfile(session.user);
       } else {
         setProfile(null);
       }
