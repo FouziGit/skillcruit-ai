@@ -78,6 +78,7 @@
 - /blog/diversite-inclusion-recrutement : Diversité et inclusion dans le recrutement : guide pratique pour réduire les biais, mesurer l'équité et construire des équipes plus performantes
 - /blog/onboarding-nouvelles-recrues-guide : Onboarding des nouvelles recrues : guide complet pour structurer l'intégration et réduire le turnover précoce
 - /blog/recrutement-predictif-ia-performance : Recrutement prédictif : utiliser l'IA et les données pour anticiper la performance des candidats avant l'embauche
+- /blog/recrutement-a-distance-bonnes-pratiques : Recrutement à distance : guide complet des meilleures pratiques pour sourcer, présélectionner et intégrer des candidats à distance en 2025
 
 ## Valeurs
 
