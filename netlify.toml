@@ -8,10 +8,26 @@
   targetPort = 8081
   framework = "#custom"
 
-# Domain redirects (HTTPS + www→non-www) are handled by Netlify's
-# domain settings and "Force HTTPS" option in the dashboard.
-# Do NOT duplicate them here — it causes redirect chains that
-# Google Search Console flags as failures.
+# Canonical redirects: collapse all http/www variants to https://skillcruit.app
+# in a single 301 hop so Google never sees a redirect chain.
+# These must come BEFORE the SPA catch-all redirect.
+[[redirects]]
+  from = "http://www.skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://skillcruit.app/*"
+  to = "https://skillcruit.app/:splat"
+  status = 301
+  force = true
 
 # SPA redirect - all routes to index.html
 [[redirects]]
