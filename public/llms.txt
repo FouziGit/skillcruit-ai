@@ -81,6 +81,7 @@
 - /blog/recrutement-a-distance-bonnes-pratiques : Recrutement à distance : guide complet des meilleures pratiques pour sourcer, présélectionner et intégrer des candidats à distance en 2025
 - /blog/entretiens-structures-recrutement-sans-biais : Entretiens structurés : la méthode scientifique pour recruter sans biais, avec validité prédictive +34% et réduction des biais de 50%
 - /blog/cooptation-recrutement-programme-referencement : Cooptation en entreprise : guide complet pour structurer un programme de référencement efficace avec time-to-hire réduit de 55% et rétention améliorée de 25%
+- /blog/tests-psychometriques-evaluation-candidats : Tests psychométriques en recrutement : guide complet pour évaluer les candidats objectivement — aptitudes cognitives, personnalité, validité prédictive et conformité RGPD
 
 ## Valeurs
 
